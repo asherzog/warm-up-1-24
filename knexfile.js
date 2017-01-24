@@ -1,4 +1,4 @@
-// Update with your config settings.
+require('dotenv').config({silent:true});
 
 module.exports = {
 
@@ -6,4 +6,8 @@ module.exports = {
     client: 'pg',
     connection: 'postgres://localhost/warmup'
   },
+  production: {
+    client: 'pg',
+    connection: process.env.DATABASE_URL + "?ssl=true"
+  }
 };
