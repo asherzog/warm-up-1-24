@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var cheese = require('./routes/cheese.js');
 var auth = require('./routes/auth.js');
-var index = require('./routes/index');
+var index = require('./apidoc');
 var users = require('./routes/users');
 
 var app = express();
